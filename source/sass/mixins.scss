@@ -1,0 +1,23 @@
+/* stylelint-disable */
+/*Сброс стилей списков*/
+@mixin list-reset {
+  padding: 0;
+  list-style-type: none;
+}
+
+/*Быстрые стили для шрифтов*/
+@mixin text ($textfamily: "Open Sans", $textsize:15px, $line-height:30px, $textcolor:#444444) {
+  font-family: $textfamily, "arial", sans-serif;
+  font-size: $textsize;
+  line-height: $line-height;
+  color: $textcolor;
+}
+
+/*Быстрые стили для ссылок*/
+@mixin link ($linkfamily: "Open Sans", $linksize:15px, $line-height:30px, $linkcolor:#444444) {
+  font-family: $linkfamily, "arial", sans-serif;
+  font-size: $linksize;
+  line-height: $line-height;
+  color: $linkcolor;
+  text-decoration: none;
+}

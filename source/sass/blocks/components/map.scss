@@ -1,0 +1,27 @@
+.map {
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
+}
+
+.map__image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  z-index: -1;
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+    transform: none;
+  }
+}
+
+.map__pin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}

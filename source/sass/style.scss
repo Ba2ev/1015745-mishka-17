@@ -1,0 +1,29 @@
+/*---Базовые элементы---*/
+@import "fonts.scss";
+@import "mixins.scss";
+@import "variables.scss";
+@import "visually-hidden.scss";
+@import "normalize.scss";
+
+/*---Страницы---*/
+@import "blocks/layouts/index.scss";
+
+/*---Основные разделы страницы---*/
+@import "blocks/layouts/footer.scss";
+
+/*---Глобальные блоки страницы---*/
+
+/*---Внутренние блоки страницы---*/
+@import "blocks/components/contacts.scss";
+@import "blocks/components/map.scss";
+@import "blocks/components/social-list.scss";
+
+/*---Модальные окна---*/
+
+/*---Ссылки---*/
+@import "blocks/links/contact-link.scss";
+@import "blocks/links/copyright-link.scss";
+@import "blocks/links/logo-link.scss";
+
+/*---Кнопки---*/
+

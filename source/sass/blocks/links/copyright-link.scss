@@ -1,0 +1,19 @@
+.copyright-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 180px;
+  padding: 22px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.copyright-link__text {
+  @include text("Open Sans Bold", 19px, 19px, $text-black);
+}
+
+.copyright-link__icon {
+  fill: $deco-light;
+}
