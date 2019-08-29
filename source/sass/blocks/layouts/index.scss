@@ -5,6 +5,18 @@
   margin: 0 auto;
 }
 
+.index__about {
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
 .index__reviews {
   position: relative;
   margin-bottom: 45px;
