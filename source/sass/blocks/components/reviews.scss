@@ -1,0 +1,95 @@
+.reviews {
+  @media (min-width: $tablet-width) {
+    padding: 80px 50px 50px;
+    background-image: url("../img/review@1x.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+  }
+}
+
+.reviews__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    max-width: 875px;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 38px;
+  @include text("Open Sans Bold", 25px, 30px, $text-black);
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.reviews__list {
+  margin: 0;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.reviews__paginator {
+  width: 260px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 175px;
+  }
+}
+
+.reviews__paginator-button {
+  width: 50%;
+  padding: 13px 0;
+  background-color: transparent;
+  border: 1px solid #ececec;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.reviews__link {
+  box-sizing: border-box;
+  display: block;
+  align-self: center;
+  min-width: 260px;
+  margin: 0 auto;
+  padding: 14px 0;
+  @include link ("Open Sans Bold", 18px, 20px, $text-grey);
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #444444;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 175px;
+  }
+}

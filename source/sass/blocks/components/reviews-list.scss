@@ -1,0 +1,35 @@
+.reviews-list {
+  @include list-reset;
+}
+
+.reviews-list__item--hide {
+  display: none;
+}
+
+.reviews-list__item-text {
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 645px;
+    font-size: 17px;
+  }
+}
+
+.reviews-list__item-person {
+  margin: 0;
+}
+
+.reviews-list__item-person-name {
+  max-width: 260px;
+
+  @include text ("Open Sans Bold", 17px, 24px, $text-black);
+  margin-bottom: 13px;
+}
+
+.reviews-list__item-person-link {
+  display: block;
+  font-size: 17px;
+  color: $text-grey;
+  text-decoration: none;
+}
