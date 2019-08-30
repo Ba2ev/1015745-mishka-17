@@ -20,7 +20,38 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <section class="week-product">
+  <section class="intro index__intro">
+    <h1 class="intro__title visually-hidden">Интернет-мазазин "Мишка"</h1>
+    <p class="intro__text">Милые штуки ручной<br> работы для дома</p>
+  </section>
+
+  <section class="categories index__categories">
+    <h2 class="categories-list__title visually-hidden">Категории магазина</h2>
+    <ul class="categories-list categories__list">
+      <li class="categories-list__item">
+        <a class="categories-list__link" href="/catalog/interiors.html">
+          <span class="categories-list__link-text">Предметы интерьера</span>
+          <p class="categories-list__link-icon-wrap">
+            <svg class="categories-list__link-icon" width="40" height="62">
+              <use xlink:href="#icon-interior"></use>
+            </svg>
+          </p>
+        </a>
+      </li>
+      <li class="categories-list__item">
+        <a class="categories-list__link" href="/catalog/toys.html">
+          <span class="categories-list__link-text">Детские игрушки</span>
+          <p class="categories-list__link-icon-wrap">
+            <svg class="categories-list__link-icon" width="60" height="60">
+              <use xlink:href="#icon-toy"></use>
+            </svg>
+          </p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="week-product index__week-product">
     <div class="week-product__container">
       <h2 class="week-product__title visually-hidden">Товар недели</h2>
       <div class="week-card week-product__card">

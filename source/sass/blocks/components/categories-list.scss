@@ -1,0 +1,72 @@
+.categories-list {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+.categories-list__item {
+  width: 100%;
+  max-width: 335px;
+
+  @media (min-width: $tablet-width) {
+    width: calc(50% - 50px);
+    max-width: 525px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    max-width: 525px;
+  }
+
+  &:nth-child(odd) .categories-list__link {
+    background-color: $deco-light;
+  }
+
+  &:nth-child(even) .categories-list__link {
+    background-color: $deco-middle;
+  }
+}
+
+.categories-list__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 103px;
+  padding: 0 25px;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 119px;
+  }
+}
+
+.categories-list__link-text {
+  max-width: 115px;
+  @include text ("Open Sans Bold", 19px, 24px, #ffffff);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.categories-list__link-icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 65px;
+  min-height: 65px;
+  margin: 0;
+}
+
+.categories-list__link-icon {
+  fill: $deco-dark;
+}
