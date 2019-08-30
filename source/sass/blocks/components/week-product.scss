@@ -1,0 +1,28 @@
+.week-product {
+  padding: 35px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 50px 50px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: auto 15px;
+    background-position: left top;
+    background-repeat: repeat-x;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 50px 70px;
+    background-size: auto 23px;
+  }
+}
+
+.week-product__container {
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+  }
+}

@@ -1,0 +1,142 @@
+.week-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    max-width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 875px;
+    margin-left: auto;
+  }
+}
+
+.week-card__title {
+  position: relative;
+  width: 260px;
+  margin: 0;
+  margin-bottom: 55px;
+  @include text("Open Sans Bold", 23px, 30px, $text-black);
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top:63px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: "Товар недели";
+    @include text("Open Sans Bold", 17px, 20px, $deco-light);
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      top: 50%;
+      left: auto;
+      right: 25px;
+      transform: translateY(-50%);
+      width: 70px;
+      font-size: 17px;
+      line-height: 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: auto;
+      left: -130px;
+    }
+  }
+}
+
+.week-card__description {
+  max-width: 260px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 292px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.week-card__params {
+  width: 260px;
+  margin-bottom: 28px;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 127px;
+  }
+}
+
+.week-card__params-line {
+  border-bottom: 1px solid #ececec;
+}
+
+.week-card__params-title {
+  min-width: 100px;
+  padding: 12px 0;
+}
+
+.week-card__image {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    z-index: -1;
+  }
+}
+
+.week-card__price {
+  width: 260px;
+  margin: 0;
+  margin-bottom: 30px;
+  @include text("Open Sans Bold", 17px, 24px, $text-grey);
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.week-card__order-link {
+  box-sizing: border-box;
+  display: block;
+  align-self: center;
+  min-width: 260px;
+  padding: 14px 0;
+  @include link ("Open Sans Bold", 18px, 20px, $text-grey);
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #444444;
+
+  @media (min-width: $tablet-width) {
+    max-width: 292px;
+  }
+}

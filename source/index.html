@@ -20,6 +20,51 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
+  <section class="week-product">
+    <div class="week-product__container">
+      <h2 class="week-product__title visually-hidden">Товар недели</h2>
+      <div class="week-card week-product__card">
+        <h3 class="week-card__title">Вязанные корзинки</h3>
+        <p class="week-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести
+          расцветках и трех размерах.</p>
+        <table class="week-card__params">
+          <tr class="week-card__params-line">
+            <td class="week-card__params-title">Цвет:</td>
+            <td class="week-card__params-value">«Тиффани»/серый</td>
+          </tr>
+          <tr class="week-card__params-line">
+            <td class="week-card__params-title">Диаметр:</td>
+            <td class="week-card__params-value">25 см</td>
+          </tr>
+          <tr class="week-card__params-line">
+            <td class="week-card__params-title">Высота:</td>
+            <td class="week-card__params-value">15 см</td>
+          </tr>
+        </table>
+        <picture>
+          <source type="image/webp" media="(min-width: 1150px)"
+            srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)"
+            srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="week-card__image" src="img/triple-set-mobile@1x.jpg"
+            srcset="img/triple-set-mobile@2x.jpg 2x"
+            alt="Изображение вязанных корзинок трёх разных размеров">
+        </picture>
+        <p class="week-card__price">
+          <span class="week-card__price-title">Цена:</span>
+          <span class="week-card__price-value">990 руб.</span>
+        </p>
+        <a class="week-card__order-link" href="order-form.html">Заказать</a>
+      </div>
+    </div>
+  </section>
+
   <section class="about index__about">
     <div class="about__container">
       <h2 class="about__title">Коротко о нас:</h2>
