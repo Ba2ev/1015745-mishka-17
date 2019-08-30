@@ -5,10 +5,18 @@
   margin: 0 auto;
 }
 
+.index__header {
+  position: relative;
+  z-index: 1;
+}
+
 .index__intro {
   position: relative;
-  margin-top: -17px;
   margin-bottom: -70px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -70px;
+  }
 }
 
 .index__categories {

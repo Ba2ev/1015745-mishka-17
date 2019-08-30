@@ -1,0 +1,8 @@
+.events-list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    @include list-reset;
+    display: flex;
+  }
+}

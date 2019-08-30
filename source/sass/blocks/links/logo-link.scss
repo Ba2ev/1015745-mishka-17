@@ -1,0 +1,13 @@
+.logo-link--header {
+  padding: 14px 0;
+  text-align: center;
+  border-bottom: 1px solid #ececec;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,73 @@
+.header__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+  }
+}
+
+.header__logo {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.header__btn-close,
+.header__btn-menu {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.header__nav {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+
+
+.header__functions {
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    margin-left: 0;
+  }
+}
+
+.header__services {
+  @media (min-width: $tablet-width) {
+    @include list-reset;
+    order: 5;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.header__events {
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}

@@ -1,0 +1,8 @@
+.services-list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include list-reset;
+    display: flex;
+  }
+}
