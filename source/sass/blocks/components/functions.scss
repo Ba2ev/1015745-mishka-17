@@ -7,6 +7,7 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     max-width: 400px;
+    min-height: 88px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,20 +29,44 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 30px;
+  padding: 25px 30px 28px;
   border: 1px solid #ececec;
   @include link ("Open Sans Bold", 17px, 24px, $text-black);
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     border: none;
     border-left: 1px solid #ececec;
+  }
+
+  &:hover {
+    .functions__link-icon {
+      fill: $deco-light;
+      opacity: 1;
+    }
+
+    .functions__link-text {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    .functions__link-icon {
+      fill: $deco-light;
+      opacity: 0.3;
+    }
+
+    .functions__link-text {
+      opacity: 0.3;
+    }
   }
 }
 
 .functions__link--search {
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
-    width: 80px;
+    width: 84px;
+    justify-content: center;
   }
 
   .functions__link-text {
@@ -49,20 +74,32 @@
       display: none;
     }
   }
+
+  .functions__link-icon {
+    @media (min-width: $tablet-width) {
+      position: static;
+    }
+  }
 }
 
 .functions__link--cart {
   @media (min-width: $tablet-width) {
-    padding-right: 0;
+    padding-left: 30px;
   }
 }
 
 .functions__link-icon {
   position: absolute;
   left: 30px;
+  opacity: 0.2;
 }
 
 .functions__link-text {
   margin: 0;
   padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 52px;
+  }
+
 }

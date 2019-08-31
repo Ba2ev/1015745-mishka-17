@@ -1,13 +1,40 @@
 .logo-link--header {
-  padding: 14px 0;
+  padding: 22px 0 22px;
   text-align: center;
   border-bottom: 1px solid #ececec;
 
+
   @media (min-width: $tablet-width) {
+    padding: 22px 0 20px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 0;
+    padding: 8px 0;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+.logo-link--footer {
+  &:hover {
+    .logo-link__icon {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo-link__image {
+  vertical-align: middle;
 }

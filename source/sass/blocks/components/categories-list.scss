@@ -45,16 +45,40 @@
 
   @media (min-width: $tablet-width) {
     min-height: 119px;
+    padding: 0 28px;
+  }
+
+  &:hover {
+    margin-top: -5px;
+    min-height: 108px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 124px;
+    }
+  }
+
+  &:active {
+    .categories-list__link-text {
+      opacity: 0.3;
+    }
+
+    .categories-list__link-icon {
+      opacity: 0.3;
+    }
   }
 }
 
 .categories-list__link-text {
   max-width: 115px;
+  padding-left: 3px;
+  padding-bottom: 5px;
   @include text ("Open Sans Bold", 19px, 24px, #ffffff);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 8px;
+    padding-bottom: 5px;
   }
 }
 

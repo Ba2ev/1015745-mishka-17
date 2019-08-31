@@ -6,3 +6,15 @@
     display: flex;
   }
 }
+
+.services-list__link {
+  @include link ("Open Sans", 15px, 24px, $text-grey);
+
+  &:hover {
+    color:$text-black;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

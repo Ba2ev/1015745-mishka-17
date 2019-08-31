@@ -3,10 +3,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 125px;
+  min-width: 142px;
   padding: 25px 15px;
 
   @media (min-width: $tablet-width) {
+    align-items: flex-end;
     padding: 0;
+  }
+}
+
+.social-list__link {
+  &:hover {
+    .social-list__link-icon {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    .social-list__link-icon {
+      opacity: 0.3;
+    }
   }
 }

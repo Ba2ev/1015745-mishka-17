@@ -8,11 +8,16 @@
 
 .reviews-list__item-text {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     max-width: 645px;
+    margin-bottom: 58px;
     font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 8px;
   }
 }
 
@@ -22,14 +27,27 @@
 
 .reviews-list__item-person-name {
   max-width: 260px;
-
-  @include text ("Open Sans Bold", 17px, 24px, $text-black);
   margin-bottom: 13px;
+  @include text ("Open Sans Bold", 17px, 24px, $text-black);
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 3px;
+  }
 }
 
 .reviews-list__item-person-link {
-  display: block;
+  display: inline;
   font-size: 17px;
   color: $text-grey;
   text-decoration: none;
+  border-bottom: 1px solid #46c1ae;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

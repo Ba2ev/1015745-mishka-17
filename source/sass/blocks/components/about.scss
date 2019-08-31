@@ -6,11 +6,12 @@
   background-repeat: repeat-x;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
+    padding-top: 68px;
     background-size: auto 15px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 87px;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 1052px 23px;
@@ -21,11 +22,11 @@
   padding: 0 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 45px;
+    padding: 0 80px 0 45px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 700px;
+    max-width: 707px;
     padding: 0;
     margin: 0 auto;
   }
@@ -34,15 +35,17 @@
 .about__title {
   margin: 0;
   margin-bottom: 30px;
-  padding: 0 7px;
+  padding: 0 3px;
   @include text("Open Sans Bold", 25px, 30px, $text-black);
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
     font-size: 53px;
     line-height: 57px;
   }

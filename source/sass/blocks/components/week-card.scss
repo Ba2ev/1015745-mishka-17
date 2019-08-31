@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    max-width: 660px;
+    max-width: 668px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,34 +18,38 @@
   position: relative;
   width: 260px;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 47px;
+
   @include text("Open Sans Bold", 23px, 30px, $text-black);
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    font-size: 43px;
+    margin-bottom: 48px;
+    font-size: 40px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top:63px;
+    margin-top: 67px;
     font-size: 53px;
     line-height: 57px;
   }
 
   &::after {
     position: absolute;
-    top: 100%;
+    bottom: -80%;
     left: 0;
     content: "Товар недели";
+
     @include text("Open Sans Bold", 17px, 20px, $deco-light);
     text-transform: uppercase;
     text-align: center;
 
     @media (min-width: $tablet-width) {
-      top: 50%;
+      top: 57%;
       left: auto;
-      right: 25px;
+      right: 28px;
+      bottom: auto;
       transform: translateY(-50%);
       width: 70px;
       font-size: 17px;
@@ -63,16 +67,17 @@
   max-width: 260px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     max-width: 292px;
+    margin-bottom: 36px;
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 65px;
+    margin-bottom: 48px;
   }
 }
 
@@ -84,11 +89,12 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    width: 292px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 127px;
+    margin-bottom: 107px;
   }
 }
 
@@ -97,12 +103,20 @@
 }
 
 .week-card__params-title {
-  min-width: 100px;
-  padding: 12px 0;
+  min-width: 80px;
+  padding: 10px 0 9px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 0 11px;
+  }
 }
 
 .week-card__image {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -116,12 +130,15 @@
 .week-card__price {
   width: 260px;
   margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 25px;
+
   @include text("Open Sans Bold", 17px, 24px, $text-grey);
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    width: 292px;
+    margin-bottom: 34px;
+    font-size: 21px;
   }
 }
 
@@ -131,6 +148,7 @@
   align-self: center;
   min-width: 260px;
   padding: 14px 0;
+
   @include link ("Open Sans Bold", 18px, 20px, $text-grey);
   text-transform: uppercase;
   text-align: center;
@@ -138,5 +156,14 @@
 
   @media (min-width: $tablet-width) {
     max-width: 292px;
+  }
+
+  &:hover {
+    color: #FFFFFF;
+    background-color: $text-grey;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

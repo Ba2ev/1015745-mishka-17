@@ -15,7 +15,7 @@
 
 .about-list__item:nth-child(odd) {
   .about-list__item-text {
-    max-width: 215px;
+    max-width: 205px;
 
     @media (min-width: $tablet-width) {
       max-width: 235px;
@@ -26,13 +26,30 @@
 .about-list__item:nth-child(even) {
   order: 1;
 
+
   @media (min-width: $tablet-width) {
     order: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+  }
+
+  .about-list__item-text {
+    max-width: 250px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 295px;
+    }
   }
 }
 
 .about-list__item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .about-list__item-inner {
@@ -42,7 +59,7 @@
   max-width: 55px;
   min-height: 37px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .about-list__item-icon {
@@ -51,8 +68,9 @@
 
 .about-list__item-text {
   display: block;
-  padding: 0 7px;
-  @include text ("Open Sans Bold", 17px, 20px, $text-black);
+  padding: 0px 5px;
+
+  @include text ("Open Sans Bold", 17px, 19px, $text-black);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

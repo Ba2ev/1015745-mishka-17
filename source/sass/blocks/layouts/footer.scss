@@ -25,12 +25,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 60px 52px 50px;
+    width: 87%;
+    padding: 52px 45px 50px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 91%;
     max-width: 1050px;
-    padding: 60px 52px 50px;
+    padding: 52px 30px 50px;
   }
 }
 

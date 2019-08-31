@@ -3,10 +3,22 @@
   justify-content: space-between;
   align-items: center;
   min-width: 180px;
-  padding: 22px 15px;
+  padding: 13px 15px;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
+    min-width: 185px;
     padding: 0;
+  }
+
+  &:active {
+    .copyright-link__text {
+      opacity: 0.3;
+    }
+
+    .copyright-link__icon {
+      opacity: 0.3;
+    }
   }
 }
 
