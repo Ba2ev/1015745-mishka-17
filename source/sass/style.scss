@@ -34,6 +34,7 @@
 @import "blocks/components/week-card.scss";
 
 /*---Модальные окна---*/
+@import "blocks/modals/quick-order.scss";
 
 /*---Ссылки---*/
 @import "blocks/links/contact-link.scss";
@@ -41,5 +42,7 @@
 @import "blocks/links/logo-link.scss";
 
 /*---Кнопки---*/
-@import "blocks/buttons/btn-close.scss";
+@import "blocks/buttons/btn-menu-close.scss";
 @import "blocks/buttons/btn-menu.scss";
+@import "blocks/buttons/btn-review-next.scss";
+@import "blocks/buttons/btn-review-prev.scss";

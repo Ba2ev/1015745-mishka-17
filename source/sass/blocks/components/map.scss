@@ -20,10 +20,16 @@
   }
 }
 
+.map__real {
+  width: 100%;
+  height: 457px;
+  border: 0;
+}
+
 .map__pin {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-98%);
+  transform: translate(-50%, -98%);
   z-index: 1;
 }

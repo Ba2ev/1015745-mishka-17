@@ -15,6 +15,14 @@
   }
 }
 
+.functions--hide {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .functions__item {
   width: 100%;
   max-width: 320px;

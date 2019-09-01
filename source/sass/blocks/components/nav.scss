@@ -9,3 +9,11 @@
     width: 450px;
   }
 }
+
+.nav--hide {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

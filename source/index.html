@@ -29,13 +29,13 @@
           <img class="logo-link__image" src="img/logo-mobile.svg" alt="Логотип магазина 'Мишка'">
         </picture>
       </a>
-      <button class="btn-close header__btn-close" type="button">
-        <svg class="btn-close__icon" width="21" height="20">
+      <button class="btn-menu-close btn-menu-close--hidden header__btn-menu-close" type="button">
+        <svg class="btn-menu-close__icon" width="21" height="20">
           <use xlink:href="#icon-menu-close"></use>
         </svg>
       </button>
       <button class="btn-menu btn-menu--hidden header__btn-menu" type="button">
-        <svg class="btn-close__icon" width="20" height="14">
+        <svg class="btn-menu__icon" width="20" height="14">
           <use xlink:href="#icon-menu-open"></use>
         </svg>
       </button>
@@ -78,10 +78,10 @@
       </div>
       <ul class="events-list header__events">
         <li class="events-list__item">
-          <a class="events-list__link">Новые поступления</a>
+          <a class="events-list__link" href="events/new.html">Новые поступления</a>
         </li>
         <li class="events-list__item">
-          <a class="events-list__link">Распродажа</a>
+          <a class="events-list__link" href="events/sales.html">Распродажа</a>
         </li>
       </ul>
       <ul class="services-list header__services">
@@ -100,7 +100,7 @@
   </section>
 
   <section class="categories index__categories">
-    <h2 class="categories-list__title visually-hidden">Категории магазина</h2>
+    <h2 class="categories__title visually-hidden">Категории магазина</h2>
     <ul class="categories-list categories__list">
       <li class="categories-list__item">
         <a class="categories-list__link" href="/catalog/interiors.html">
@@ -170,6 +170,37 @@
     </div>
   </section>
 
+  <section class="quick-order quick-order--hide index__quick-order">
+    <div class="quick-order__container">
+      <h2 class="quick-order__title">Добавить в корзину</h2>
+      <p class="quick-order__text">Выберите размер:</p>
+      <form class="quick-order__form" action="https://echo.htmlacademy.ru" method="get">
+        <input class="quick-order__input-hidden" type="text" name="Product" value="Вязанные корзиночки">
+        <input class="quick-order__input-hidden" type="number" name="Cost" value="990">
+        <div class="quick-order__form-inner">
+          <div class="quick-order__form-line">
+            <input class="quick-order__radio" type="radio" name="Size" id="size-s" value="S" checked>
+            <label class="quick-order__radio-label" for="size-s">S</label>
+          </div>
+          <div class="quick-order__form-line">
+            <input class="quick-order__radio" type="radio" name="Size" id="size-m" value="M">
+            <label class="quick-order__radio-label" for="size-m">M</label>
+          </div>
+          <div class="quick-order__form-line">
+            <input class="quick-order__radio" type="radio" name="Size" id="size-l" value="L">
+            <label class="quick-order__radio-label" for="size-l">L</label>
+          </div>
+        </div>
+        <button class="quick-order__form-submit" type="submit">Добавить</button>
+      </form>
+      <button class="quick-order__close" type="button">
+          <svg class="quick-order__close-icon" width="21" height="20">
+              <use xlink:href="#icon-menu-close"></use>
+            </svg>
+      </button>
+    </div>
+  </section>
+
   <section class="about index__about">
     <div class="about__container">
       <h2 class="about__title">Коротко о нас:</h2>
@@ -230,11 +261,16 @@
     <div class="reviews__container">
       <h2 class="reviews__title">Отзывы</h2>
       <ul class="reviews-list reviews__list">
-        <li class="reviews-list__item reviews-list__item--hide">
-          <p class="reviews-list__item-text"></p>
+        <li class="reviews-list__item">
+          <p class="reviews-list__item-text">Долго искал что подарить племяннице на день рождения,
+            т.к. дети нынче очень привередливые. В итоге решил подарить ей зайца и корзину, чтобы
+            было куда складывать все игрушки. Восторг у неё был неописуемый! Уже прошло больше
+            недели, а она до сих пор везде таскает это зайца. Иногда даже приходится отбирать его с
+            боем. Очень рекомендую!</p>
           <p class="reviews-list__item-person">
-            <span class="reviews-list__item-person-name"></span>
-            <a class="reviews-list__item-person-link"></a>
+            <span class="reviews-list__item-person-name">Константин Константиновский</span>
+            <a class="reviews-list__item-person-link"
+              href="@konstantinkonstantinovskiy">@konstantinkonstantinovskiy</a>
           </p>
         </li>
         <li class="reviews-list__item">
@@ -248,22 +284,24 @@
               href="/profile/@misssssiskras">@misssssiskras</a>
           </p>
         </li>
-        <li class="reviews-list__item reviews-list__item--hide">
-          <p class="reviews-list__item-text"></p>
+        <li class="reviews-list__item">
+          <p class="reviews-list__item-text">Очень понравились корзиночки! В них помещается вся моя
+            косметика! Плюс они мягкие, поэтому их можно склывать, чтобы они не занимали много
+            места. Рекумендую!</p>
           <p class="reviews-list__item-person">
-            <span class="reviews-list__item-person-name"></span>
-            <a class="reviews-list__item-person-link"></a>
+            <span class="reviews-list__item-person-name">Рита Павлова</span>
+            <a class="reviews-list__item-person-link" href="@ritusikP">@ritusikP</a>
           </p>
         </li>
       </ul>
       <div class="reviews__paginator">
-        <button class="reviews__paginator-button" type="button">
-          <svg class="reviews__paginator-icon" width="50" height="26">
+        <button class="btn-review-prev reviews__paginator-button" type="button">
+          <svg class="btn-review-prev__icon" width="50" height="26">
             <use xlink:href="#icon-left-arrow"></use>
           </svg>
         </button>
-        <button class="reviews__paginator-button" type="button">
-          <svg class="reviews__paginator-icon" width="50" height="26">
+        <button class="btn-review-next reviews__paginator-button" type="button">
+          <svg class="btn-review-next__icon" width="50" height="26">
             <use xlink:href="#icon-right-arrow"></use>
           </svg>
         </button>
@@ -272,7 +310,7 @@
     </div>
   </section>
 
-  <section class="index__contact-container">
+  <div class="index__contact-container">
 
     <section class="contacts index__contacts">
       <div class="contacts__container">
@@ -311,7 +349,7 @@
       </picture>
       <iframe class="map__real"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003192!2d30.320858716254786!3d59.93871916905404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1567020031701!5m2!1sru!2sru"
-        width="100%" height="457" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+         allowfullscreen=""></iframe>
       <svg class="map__pin" width="67" height="100">
         <use xlink:href="#icon-map-pin">
         </use>
@@ -320,7 +358,7 @@
 
     <a class="contact-link index__contact-link" href="contact-form.html">Напишите нам</a>
 
-  </section>
+  </div>
 
   <footer class="footer index__footer">
     <div class="footer__container">
@@ -352,7 +390,8 @@
           </a>
         </li>
       </ul>
-      <a class="copyright-link footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+      <a class="copyright-link footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"
+        target="_blank">
         <span class="copyright-link__text">Разработано</span>
         <svg class="copyright-link__icon" width="27" height="34">
           <use xlink:href="#logo-htmlacademy"></use>
@@ -360,7 +399,7 @@
       </a>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

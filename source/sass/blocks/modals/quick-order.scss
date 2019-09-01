@@ -1,0 +1,154 @@
+.quick-order {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.quick-order--hide {
+  display: none;
+}
+
+.quick-order__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  padding: 30px 30px 45px;
+  background-color: #FFFFFF;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding: 33px 106px 45px;
+  }
+}
+
+.quick-order__title {
+  max-width: 160px;
+  margin: 0;
+  margin-bottom: 12px;
+  @include text("Open Sans Bold", 25px, 30px, $text-black);
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    font-size: 29px;
+    line-height: 57px;
+    margin-bottom: 14px;
+  }
+}
+
+.quick-order__text {
+  margin: 0;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 22px;
+  }
+}
+
+.quick-order__form {
+  width: 100%;
+}
+
+.quick-order__input-hidden {
+  display: none;
+}
+
+.quick-order__form-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.quick-order__radio {
+  display: none;
+}
+
+.quick-order__radio-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 48px;
+  @include text("Open Sans Bold", 17px, 17px, $text-grey);
+  text-transform: uppercase;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 108px;
+  }
+
+  &:hover {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border-color: $deco-light;
+  }
+}
+
+.quick-order__radio:checked+.quick-order__radio-label {
+  border-color: $deco-light;
+}
+
+.quick-order__form-submit {
+  width: 100%;
+  max-width: 260px;
+  padding: 18px;
+  @include text("Open Sans Bold", 17px, 17px, #FFFFFF);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $deco-light;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    max-width: 350px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.quick-order__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.quick-order__close-icon {
+  &:hover {
+    fill: $deco-light;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

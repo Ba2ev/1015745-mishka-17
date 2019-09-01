@@ -1,0 +1,23 @@
+.btn-review-next {
+  width: 50%;
+  padding: 10px 0;
+  background-color: transparent;
+  border: 1px solid #ececec;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  &:hover {
+    .btn-review-next__icon {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    .btn-review-next__icon {
+      opacity: 0.3;
+    }
+  }
+}
