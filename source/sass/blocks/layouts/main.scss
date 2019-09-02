@@ -1,0 +1,113 @@
+.main__title {
+  margin-bottom: 15px;
+}
+
+.main__intro {
+  position: relative;
+  margin-bottom: -90px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -60px;
+  }
+}
+
+.main__categories {
+  position: relative;
+}
+
+.main__week-product {
+  position: relative;
+}
+
+.main__about {
+  margin-bottom: 57px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+  }
+}
+
+.main__reviews {
+  position: relative;
+  margin-bottom: 45px;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+}
+
+.main__contact-container {
+  position: relative;
+  margin: 0 auto;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: auto 6px;
+  background-position: left top;
+  background-repeat: repeat-x;
+
+  @media (min-width: $tablet-width) {
+    background-size: auto 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    max-width: 1052px;
+    padding-top: 95px;
+    padding-bottom: 105px;
+    padding-left: 175px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1052px 23px;
+  }
+}
+
+.main__contacts {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 70px;
+  }
+}
+
+.main__map {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    right: 0;
+  }
+}
+
+.main__contact-link {
+  margin: 30px auto 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 47px auto 57px;
+    ;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 80px;
+  }
+}
+
+.main__promo {
+  margin: 15px 30px 60px;
+}

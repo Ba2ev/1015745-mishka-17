@@ -34,27 +34,33 @@ if (document.querySelector(".header") !== null) {
 }
 
 /*-----Скрытие/раскрытие модального окна заказа (index.html)-----*/
-var modalQuickOrder = function () {
+var modalQuickOrder = function (linkOPen) {
 
-  var buttonOpen = document.querySelector(".week-card__order-link");
+  var buttonsOpen = document.querySelectorAll(linkOPen);
   var buttonClose = document.querySelector(".quick-order__close");
   var QuickOrder = document.querySelector(".quick-order");
 
-  buttonOpen.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    QuickOrder.classList.remove("quick-order--hide");
-  })
+  for (var i = 0; i < buttonsOpen.length; i++) {
+    buttonsOpen[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      QuickOrder.classList.remove("quick-order--hide");
+    });
+  }
 
   buttonClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     QuickOrder.classList.add("quick-order--hide");
-  })
+  });
 
 }
 
 /*-----Вызов скрытия/раскрытия модального окна заказа (index.html)----- */
 if (document.querySelector(".week-product") !== null) {
-  modalQuickOrder();
+  modalQuickOrder(".week-card__order-link");
+}
+
+if (document.querySelector(".product") !== null) {
+  modalQuickOrder(".product__buy-link");
 }
 
 /*-----Переключение ревью (index.html)[опционально]-----*/

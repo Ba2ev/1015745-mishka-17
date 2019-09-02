@@ -1,0 +1,13 @@
+.promo {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    justify-content: flex-end;
+  }
+}
+
+.promo__video {
+  position: relative;
+}

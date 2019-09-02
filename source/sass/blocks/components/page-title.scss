@@ -1,0 +1,12 @@
+.page-title {
+  width: 100%;
+  min-height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ececec;
+}
+
+.page-title__title {
+  @include text("Open Sans Bold", 27px, 30px, $text-black);
+}

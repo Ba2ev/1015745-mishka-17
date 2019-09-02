@@ -1,15 +1,15 @@
-.index {
+.catalog {
   @include text;
   min-width: 320px;
   padding: 0;
   margin: 0 auto;
 }
 
-.index__header {
+.catalog__header {
   position: relative;
   z-index: 1;
 }
 
-.index__footer {
+.catalog__footer {
   position: relative;
 }
