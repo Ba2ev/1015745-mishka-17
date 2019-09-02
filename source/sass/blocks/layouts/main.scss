@@ -1,5 +1,15 @@
 .main__title {
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -58px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: -61px;
+  }
 }
 
 .main__intro {
@@ -12,6 +22,13 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -60px;
+  }
+}
+
+.main__catalog {
+  @media (min-width: $desktop-width) {
+    margin-top: 103px;
+    margin-bottom: 32px;
   }
 }
 
@@ -110,4 +127,8 @@
 
 .main__promo {
   margin: 15px 30px 60px;
+
+  @media (min-width: $desktop-width) {
+    margin: 15px auto 103px;
+  }
 }

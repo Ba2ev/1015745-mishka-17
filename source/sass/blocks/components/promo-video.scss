@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 370px;
-    padding: 50px 60px 60px 80px;
+    padding: 41px 57px 60px 78px;
   }
 }
 
@@ -21,39 +21,67 @@
   align-items: center;
   width: 100%;
   max-width: 340px;
-  margin: 30px 30px 25px;
+  margin: 22px 25px 24px;
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
+    margin: 0 26px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    margin-bottom: 33px;
   }
 }
 
 .promo-video__title-icon {
   fill: $deco-light;
-  margin-right: 25px;
+  margin-right: 23px;
+  margin-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 42px;
+    height: 32px;
+    margin-right: 27px;
+    margin-left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: -2px;
+    margin-bottom: 22px;
+  }
 }
 
 .promo-video__title-text {
   @include text("Open Sans Bold", 17px, 24px, $text-black);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .promo-video__image-link {
   position: relative;
   display: block;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     order: -1;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top:0;
+    top: 0;
     left: -682px;
+    margin: 0;
   }
 }
 
 .promo-video__image {
-  margin-bottom: 35px;
   vertical-align: middle;
 }
 
@@ -65,12 +93,22 @@
 }
 
 .promo-video__description {
-  max-width: 185px;
-  margin: 0 30px 30px;
+  max-width: 192px;
+  margin: 0 30px 23px;
+
   @include text("Open Sans", 13px, 24px, $text-grey);
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
+    margin: 0 40px 37px;
+    font-size: 15px;
+    line-height: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 45px;
+    line-height: 30px;
   }
 }
 
@@ -88,5 +126,11 @@
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
+    margin: 0 41px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 3px;
   }
 }

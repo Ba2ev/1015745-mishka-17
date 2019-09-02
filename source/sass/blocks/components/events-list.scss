@@ -9,11 +9,11 @@
 }
 
 .events-list__item:not(:first-child) {
-  margin-left: 65px;
+  margin-left: 62px;
 }
 
 .events-list__link {
-  @include link ("Open Sans Bold", 16px, 24px, $text-black);
+  @include link ("Open Sans Bold", 15px, 24px, $text-black);
 
   &:hover {
     opacity: 0.6;

@@ -5,8 +5,31 @@
   justify-content: center;
   align-items: center;
   background-color: #ececec;
+
+  @media (min-width: $tablet-width) {
+    min-height: 240px;
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 255px;
+    background-position: center 240px;
+  }
 }
 
 .page-title__title {
+  margin: 0;
   @include text("Open Sans Bold", 27px, 30px, $text-black);
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 51px;
+    line-height: 51px;
+  }
 }

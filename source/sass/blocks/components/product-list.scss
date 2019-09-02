@@ -10,10 +10,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1050px;
+    max-width: 1110px;
   }
 }
 
 .product-list__item {
   margin: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 25px;
+  }
 }
