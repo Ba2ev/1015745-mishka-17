@@ -1,4 +1,4 @@
-/*-----Скрытие/раскрытие меню (index.html)-----*/
+/*-----Скрытие/раскрытие меню-----*/
 var popupMenu = function () {
   var btnOpen = document.querySelector('.btn-menu');
   var btnClose = document.querySelector('.btn-menu-close');
@@ -27,11 +27,11 @@ var popupMenu = function () {
     headerFunctions.classList.add("functions--hide");
   })
 }
-
-/*-----Вызов скрытия/раскрытия меню (index.html)----- */
+/*-----Вызов скрытия/раскрытия меню----- */
 if (document.querySelector(".header") !== null) {
   popupMenu();
 }
+
 
 /*-----Скрытие/раскрытие модального окна заказа (index.html)-----*/
 var modalQuickOrder = function (linkOPen) {
@@ -53,16 +53,10 @@ var modalQuickOrder = function (linkOPen) {
   });
 
 }
-
 /*-----Вызов скрытия/раскрытия модального окна заказа (index.html)----- */
 if (document.querySelector(".week-product") !== null) {
   modalQuickOrder(".week-card__order-link");
 }
-
-if (document.querySelector(".product") !== null) {
-  modalQuickOrder(".product__buy-link");
-}
-
 /*-----Переключение ревью (index.html)[опционально]-----*/
 var changeReview = function () {
   var buttonNext = document.querySelector(".btn-review-next");
@@ -97,8 +91,33 @@ var changeReview = function () {
   })
 
 }
-
-/*-----Вызов переключению ревью (index.html)[опционально]----- */
+/*-----Вызов переключения ревью (index.html)[опционально]----- */
 if (document.querySelector(".reviews-list") !== null) {
   changeReview();
+}
+
+
+/*-----Вызов скрытия/раскрытия модального окна заказа (catalog.html)----- */
+if (document.querySelector(".product") !== null) {
+  modalQuickOrder(".product__buy-link");
+}
+/*-----Добавление товара через быструю форму (catalog.html)[опционально]-----*/
+var addProductToCart = function () {
+
+  var productsList = document.querySelector(".product-list");
+  var productName = document.querySelector(".quick-order__input-hidden[name=Product]");
+  var productCost = document.querySelector(".quick-order__input-hidden[name=Cost]");
+
+  productsList.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    if (event.target.closest(".product__buy-link")) {
+      var target = event.target.closest(".product");
+      productName.value = target.querySelector(".product__title-link").innerText;
+      productCost.value = Number.parseInt(target.querySelector(".product__cost").innerText.replace(/\s/, ""));
+    }
+  })
+}
+/*-----Вызов добавления товара через быструю форму (catalog.html)[опционально]-----*/
+if (document.querySelector(".product-list") !== null) {
+  addProductToCart();
 }
