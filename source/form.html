@@ -104,7 +104,7 @@
       <h2 class="knitting-order__title visually-hidden">Форма заявки для вязания на заказ</h2>
       <p class="knitting-order__description">Мы будем рады воплотить в жизнь ваши пожелания!
         Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="knitting-form knitting-order__form">
+      <form class="knitting-form knitting-order__form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="knitting-form__container">
           <fieldset class="knitting-form__group">
             <legend class="knitting-form__group-legend">Тип</legend>
@@ -188,7 +188,7 @@
             <div class="knitting-form__contact-line">
               <label class="knitting-form__contact-label" for="phone">тел</label>
               <input class="knitting-form__contact" type="tel" name="Phone" id="phone"
-                placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                placeholder="+7 ХХХ ХХХ ХХ ХХ*" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
               <svg class="knitting-form__contact-icon knitting-form__contact-icon--phone" width="25" height="24">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -196,7 +196,7 @@
             <div class="knitting-form__contact-line">
               <label class="knitting-form__contact-label" for="email">E-mail</label>
               <input class="knitting-form__contact" type="email" name="Email" id="email"
-                placeholder="Ваш Email*">
+                placeholder="Ваш Email*" required>
               <svg class="knitting-form__contact-icon knitting-form__contact-icon--mail" width="32" height="21">
                 <use xlink:href="#icon-mail"></use>
               </svg>
