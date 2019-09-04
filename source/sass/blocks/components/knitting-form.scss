@@ -1,0 +1,595 @@
+.knitting-form {
+  border-top: 1px solid transparent;
+}
+
+.knitting-form__container {
+
+  &:nth-child(even) {
+    @media (min-width: $tablet-width) {
+      background-color: #f1f1f1;
+      border-top: 1px solid #f1f1f1;
+      border-bottom: 1px solid #f1f1f1;
+    }
+  }
+}
+
+.knitting-form__group {
+  max-width: 260px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  border-top: 1px solid $deco-light;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    max-width: 668px;
+    margin: 50px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 926px;
+    justify-content: flex-start;
+  }
+}
+
+.knitting-form__group--contact {
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.knitting-form__group--footer {
+  align-items: center;
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.knitting-form__group-legend {
+  padding-right: 25px;
+  @include text("open Sans Bold", 17px, 17px, $deco-light);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    padding-right: 0;
+  }
+}
+
+.knitting-form__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    margin-left: 113px;
+  }
+}
+
+.knitting-form__wrap--type {
+  margin-top: 31px;
+  margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+    margin-bottom: 18px;
+  }
+}
+
+.knitting-form__wrap--check {
+  margin-top: 13px;
+  margin-bottom: 21px;
+  min-height: 202px;
+  align-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 125px;
+    width: 766px;
+  }
+}
+
+.knitting-form__wrap--fio {
+  margin-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.knitting-form__wrap--text {
+  margin-top: 0px;
+}
+
+.knitting-form__radio-line {
+  display: flex;
+  width: 260px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  &:not(:first-child) {
+    margin-top: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 58px;
+    }
+  }
+}
+
+.knitting-form__radio {
+  display: none;
+}
+
+.knitting-form__radio-label {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 180px;
+  padding-left: 62px;
+
+  @include text("Open Sans Bold", 17px, 18px, $text-black);
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    padding-left: 80px;
+    font-size: 19px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+    border: 2px solid #444444;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: -16px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      border-color: #62d1ba;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #444444;
+      opacity: 0.3;
+    }
+  }
+}
+
+.knitting-form__radio:checked+.knitting-form__radio-label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #62d1ba;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: 15px;
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+.knitting-form__check-line {
+  display: flex;
+  width: 260px;
+  margin: 11px 0 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 240px;
+    margin: 0;
+    height: 51px;
+  }
+}
+
+.knitting-form__check {
+  display: none;
+}
+
+.knitting-form__check-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding-left: 62px;
+  @include text("Open Sans Bold", 17px, 18px, $text-black);
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    height: 51px;
+    padding-left: 80px;
+    font-size: 19px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+    border: 2px solid #444444;
+
+    @media (min-width: $tablet-width) {
+      width: 50px;
+      height: 48px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      border-color: #62d1ba;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #444444;
+      opacity: 0.3;
+    }
+  }
+}
+
+.knitting-form__check:checked+.knitting-form__check-label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    display: block;
+    width: 22px;
+    height: 16px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 16px;
+
+    @media (min-width: $tablet-width) {
+      left: 10px;
+      width: 33px;
+      height: 22px;
+      background-size: 33px 22px;
+    }
+  }
+}
+
+.knitting-form__text-line {
+  width: 260px;
+  margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  &:not(:first-child) {
+    margin-top: 25px;
+  }
+}
+
+.knitting-form__text-label {
+  display: block;
+  @include text("Open Sans Bold", 17px, 18px, $text-black);
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+    font-size: 19px;
+  }
+
+}
+
+.knitting-form__text {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 19px;
+  line-height: 19px;
+  padding: 15px 0 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 18px;
+  }
+
+  &::placeholder {
+    @include text("Open Sans", 17px, 18px, rgba(68, 68, 68, 0.3));
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+  }
+}
+
+.knitting-form__contact-line {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+
+  &:not(:last-child) {
+    margin-top: 31px;
+    margin-bottom: 33px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.knitting-form__contact-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  @include text("Open Sans Bold", 17px, 17px, $deco-light);
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -115px;
+  }
+
+  &::after {
+    content: "";
+    position: relative;
+    display: block;
+    flex-grow: 1;
+    height: 1px;
+    background-color: #62d1ba;
+    margin-left: 30px;
+  }
+}
+
+.knitting-form__contact {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 35px 16px 0;
+  font-size: 19px;
+  line-height: 19px;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    padding: 15px 60px 16px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+
+    &+.knitting-form__contact-icon {
+      fill: #62d1ba;
+      opacity: 1;
+    }
+  }
+}
+
+.knitting-form__contact-icon {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.knitting-form__contact-icon--phone {
+  right: 8px;
+  bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    right: 25px;
+    bottom: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 8px;
+  }
+}
+
+.knitting-form__contact-icon--mail {
+  right: 4px;
+  bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 4px;
+  }
+}
+
+.knitting-form__textarea-line {
+  margin-top: 33px;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.knitting-form__textarea-label {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans Bold", "arial", sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  color: #63d1bb;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 16px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -115px;
+  }
+
+  &::after {
+    content: "";
+    position: relative;
+    display: block;
+    flex-grow: 1;
+    height: 1px;
+    background-color: #62d1ba;
+    margin-left: 30px;
+  }
+}
+
+.knitting-form__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 142px;
+  padding: 14px;
+  border: 2px solid #444444;
+  resize: none;
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    margin-top: 0;
+    padding: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+
+  &::placeholder {
+    @include text("Open Sans", 17px, 18px, rgba(68, 68, 68, 0.3));
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+  }
+}
+
+.knitting-form__required-message {
+  display: block;
+  width: 260px;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    width: 302px;
+    margin-left: auto;
+    margin-bottom: 0;
+    align-self: center;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.knitting-form__submit {
+  box-sizing: border-box;
+  display: block;
+  align-self: center;
+  min-width: 260px;
+  padding: 14px 0;
+  background-color: transparent;
+
+  @include link ("Open Sans Bold", 18px, 20px, $text-grey);
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #444444;
+
+  @media (min-width: $tablet-width) {
+    min-width: 230px;
+  }
+
+  &:hover {
+    color: #FFFFFF;
+    background-color: $text-grey;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

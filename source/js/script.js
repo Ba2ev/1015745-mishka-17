@@ -1,10 +1,10 @@
 /*-----Скрытие/раскрытие меню-----*/
 var popupMenu = function () {
-  var btnOpen = document.querySelector('.btn-menu');
-  var btnClose = document.querySelector('.btn-menu-close');
+  var btnOpen = document.querySelector(".btn-menu");
+  var btnClose = document.querySelector(".btn-menu-close");
 
-  var headerNav = document.querySelector('.header__nav');
-  var headerFunctions = document.querySelector('.header__functions');
+  var headerNav = document.querySelector(".header__nav");
+  var headerFunctions = document.querySelector(".header__functions");
 
   btnOpen.classList.remove("btn-menu--hidden");
   btnClose.classList.add("btn-menu-close--hidden");

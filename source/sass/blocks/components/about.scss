@@ -1,9 +1,6 @@
 .about {
   padding-top: 35px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-size: auto 6px;
-  background-position: left top;
-  background-repeat: repeat-x;
+
 
   @media (min-width: $tablet-width) {
     padding-top: 68px;
@@ -12,9 +9,34 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 87px;
-    background-repeat: no-repeat;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 320px;
+    height: 6px;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-size: 320px 6px;
     background-position: center top;
-    background-size: 1052px 23px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      height: 15px;
+      background-size: 768px 15px;
+      transform: rotate(180deg);
+    }
+
+    @media (min-width: $desktop-width) {
+      left:50%;
+      width: 1050px;
+      height: 23px;
+      background-size: 1050px 23px;
+      transform: translateX(-50%) rotate(180deg);
+    }
   }
 }
 

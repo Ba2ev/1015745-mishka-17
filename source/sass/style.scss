@@ -8,6 +8,7 @@
 /*---Страницы---*/
 @import "blocks/layouts/index.scss";
 @import "blocks/layouts/catalog.scss";
+@import "blocks/layouts/form.scss";
 
 /*---Основные разделы страницы---*/
 @import "blocks/layouts/header.scss";
@@ -20,6 +21,7 @@
 @import "blocks/components/categories.scss";
 @import "blocks/components/contacts.scss";
 @import "blocks/components/intro.scss";
+@import "blocks/components/knitting-order.scss";
 @import "blocks/components/map.scss";
 @import "blocks/components/nav.scss";
 @import "blocks/components/page-title.scss";
@@ -31,6 +33,7 @@
 @import "blocks/components/about-list.scss";
 @import "blocks/components/categories-list.scss";
 @import "blocks/components/events-list.scss";
+@import "blocks/components/knitting-form.scss";
 @import "blocks/components/nav-list.scss";
 @import "blocks/components/functions.scss";
 @import "blocks/components/product-list.scss";

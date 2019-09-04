@@ -1,13 +1,10 @@
 .main__title {
-  margin-bottom: 15px;
-
   @media (min-width: $tablet-width) {
     margin-top: -58px;
-    margin-bottom: 50px;
+    margin-bottom: -15px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
     margin-top: -61px;
   }
 }
@@ -26,8 +23,14 @@
 }
 
 .main__catalog {
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-top: 103px;
+    margin-top: 106px;
     margin-bottom: 32px;
   }
 }
@@ -41,6 +44,7 @@
 }
 
 .main__about {
+  position: relative;
   margin-bottom: 57px;
 
   @media (min-width: $tablet-width) {
@@ -71,14 +75,6 @@
 .main__contact-container {
   position: relative;
   margin: 0 auto;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-size: auto 6px;
-  background-position: left top;
-  background-repeat: repeat-x;
-
-  @media (min-width: $tablet-width) {
-    background-size: auto 15px;
-  }
 
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
@@ -86,9 +82,34 @@
     padding-top: 95px;
     padding-bottom: 105px;
     padding-left: 175px;
-    background-repeat: no-repeat;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 320px;
+    height: 6px;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-size: 320px 6px;
     background-position: center top;
-    background-size: 1052px 23px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      height: 15px;
+      background-size: 768px 15px;
+      transform: rotate(180deg);
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 50%;
+      width: 1050px;
+      height: 23px;
+      background-size: 1050px 23px;
+      transform: translateX(-50%) rotate(180deg);
+    }
   }
 }
 
@@ -130,5 +151,13 @@
 
   @media (min-width: $desktop-width) {
     margin: 15px auto 103px;
+  }
+}
+
+.main__knitting {
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
   }
 }

@@ -1,0 +1,21 @@
+.knitting-order {
+  background-color: #ffffff;
+  border-top: 1px solid #ffffff;
+}
+
+.knitting-order__description {
+  margin: 23px 30px;
+  @include text ("Open Sans", 13px, 24px, $text-grey);
+
+  @media (min-width: $tablet-width) {
+    max-width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+    margin: 71px auto 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+    margin-top: 123px;
+  }
+}

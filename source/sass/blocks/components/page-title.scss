@@ -10,12 +10,15 @@
     min-height: 240px;
     background-image: url(../img/bg-zigzag-fill.svg);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center 217px;
+    background-size: 768px 24px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 255px;
-    background-position: center 240px;
+    min-height: 247px;
+    background-position: center 238px;
+    padding-bottom: 20px;
+    background-size: 1150px 34px;
   }
 }
 
