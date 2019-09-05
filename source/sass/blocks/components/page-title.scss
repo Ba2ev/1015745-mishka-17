@@ -1,13 +1,13 @@
 .page-title {
   width: 100%;
-  min-height: 175px;
+  height: 175px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ececec;
 
   @media (min-width: $tablet-width) {
-    min-height: 240px;
+    height: 240px;
     background-image: url(../img/bg-zigzag-fill.svg);
     background-repeat: no-repeat;
     background-position: center 217px;
@@ -15,9 +15,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 247px;
+    height: 247px;
     background-position: center 238px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     background-size: 1150px 34px;
   }
 }

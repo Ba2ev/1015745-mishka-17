@@ -110,11 +110,18 @@ var addProductToCart = function () {
 
   productsList.addEventListener("click", function (evt) {
     evt.preventDefault();
-    if (event.target.closest(".product__buy-link")) {
-      var target = event.target.closest(".product");
-      productName.value = target.querySelector(".product__title-link").innerText;
-      productCost.value = Number.parseInt(target.querySelector(".product__cost").innerText.replace(/\s/, ""));
+    if (Element.prototype.closest) {
+      if (event.target.closest(".product__buy-link")) {
+        var target = event.target.closest(".product");
+      }
+    } else {
+      var target = event.target;
+      while (!target.classList.contains("product__buy-link")) {
+        target = target.parentElement;
+      }
     }
+    productName.value = target.querySelector(".product__title-link").innerText;
+    productCost.value = Number.parseInt(target.querySelector(".product__cost").innerText.replace(/\s/, ""));
   })
 }
 /*-----Вызов добавления товара через быструю форму (catalog.html)[опционально]-----*/

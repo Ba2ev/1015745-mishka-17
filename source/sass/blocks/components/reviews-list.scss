@@ -9,11 +9,15 @@
 .reviews-list__item-text {
   margin: 0;
   margin-bottom: 24px;
+  height:270px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (min-width: $tablet-width) {
     max-width: 645px;
     margin-bottom: 58px;
     font-size: 17px;
+    height: 120px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,6 +36,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    max-width: 400px;
     margin-bottom: 3px;
   }
 }

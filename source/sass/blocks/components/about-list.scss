@@ -3,6 +3,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    max-width: 707px;
+    margin: 0 auto;
+  }
 }
 
 .about-list__item {

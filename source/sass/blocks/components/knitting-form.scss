@@ -280,7 +280,9 @@
   &::after {
     content: "";
     position: absolute;
+    top:50%;
     left: 9px;
+    transform: translateY(-50%);
     display: block;
     width: 22px;
     height: 16px;
@@ -361,7 +363,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    position: static;
+    position: relative;
     display: flex;
     align-items: center;
   }
@@ -446,7 +448,6 @@
 
   @media (min-width: $tablet-width) {
     right: 25px;
-    bottom: auto;
   }
 
   @media (min-width: $desktop-width) {
