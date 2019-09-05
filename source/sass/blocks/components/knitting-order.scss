@@ -5,6 +5,7 @@
 
 .knitting-order__description {
   margin: 23px 30px;
+
   @include text ("Open Sans", 13px, 24px, $text-grey);
 
   @media (min-width: $tablet-width) {

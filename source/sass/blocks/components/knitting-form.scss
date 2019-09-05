@@ -3,7 +3,6 @@
 }
 
 .knitting-form__container {
-
   &:nth-child(even) {
     @media (min-width: $tablet-width) {
       background-color: #f1f1f1;
@@ -55,6 +54,7 @@
 
 .knitting-form__group-legend {
   padding-right: 25px;
+
   @include text("open Sans Bold", 17px, 17px, $deco-light);
   text-transform: uppercase;
 
@@ -117,7 +117,7 @@
 }
 
 .knitting-form__wrap--text {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .knitting-form__radio-line {
@@ -193,7 +193,7 @@
   }
 }
 
-.knitting-form__radio:checked+.knitting-form__radio-label {
+.knitting-form__radio:checked + .knitting-form__radio-label {
   &::after {
     content: "";
     position: absolute;
@@ -236,6 +236,7 @@
   align-items: center;
   min-height: 40px;
   padding-left: 62px;
+
   @include text("Open Sans Bold", 17px, 18px, $text-black);
   cursor: pointer;
 
@@ -276,11 +277,11 @@
   }
 }
 
-.knitting-form__check:checked+.knitting-form__check-label {
+.knitting-form__check:checked + .knitting-form__check-label {
   &::after {
     content: "";
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 9px;
     transform: translateY(-50%);
     display: block;
@@ -317,6 +318,7 @@
 
 .knitting-form__text-label {
   display: block;
+
   @include text("Open Sans Bold", 17px, 18px, $text-black);
   cursor: pointer;
 
@@ -324,7 +326,6 @@
     margin-right: 25px;
     font-size: 19px;
   }
-
 }
 
 .knitting-form__text {
@@ -383,6 +384,7 @@
   position: relative;
   display: flex;
   align-items: center;
+
   @include text("Open Sans Bold", 17px, 17px, $deco-light);
   text-transform: uppercase;
   cursor: pointer;
@@ -430,7 +432,7 @@
   &:focus {
     border-color: #62d1ba;
 
-    &+.knitting-form__contact-icon {
+    & + .knitting-form__contact-icon {
       fill: #62d1ba;
       opacity: 1;
     }
@@ -586,7 +588,7 @@
   }
 
   &:hover {
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: $text-grey;
   }
 

@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) and (min-resolution: $retina-dpi),
     (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/review@2x.jpg");
+    background-image: url("../img/review@2x.jpg");
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +33,7 @@
 .reviews__title {
   margin: 0;
   margin-bottom: 24px;
+
   @include text("Open Sans Bold", 25px, 30px, $text-black);
 
   @media (min-width: $tablet-width) {
@@ -78,6 +79,7 @@
   min-width: 260px;
   margin: 0 auto;
   padding: 14px 0;
+
   @include link ("Open Sans Bold", 18px, 20px, $text-grey);
   text-transform: uppercase;
   text-align: center;
@@ -95,7 +97,7 @@
   }
 
   &:hover {
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: $text-grey;
   }
 

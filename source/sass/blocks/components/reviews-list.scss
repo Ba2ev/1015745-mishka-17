@@ -9,7 +9,7 @@
 .reviews-list__item-text {
   margin: 0;
   margin-bottom: 24px;
-  height:270px;
+  height: 270px;
   overflow: hidden;
   text-overflow: ellipsis;
 
@@ -32,6 +32,7 @@
 .reviews-list__item-person-name {
   max-width: 260px;
   margin-bottom: 13px;
+
   @include text ("Open Sans Bold", 17px, 24px, $text-black);
 
   @media (min-width: $tablet-width) {

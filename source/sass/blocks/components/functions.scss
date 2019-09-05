@@ -39,6 +39,7 @@
   align-items: center;
   padding: 25px 30px 28px;
   border: 1px solid #ececec;
+
   @include link ("Open Sans Bold", 17px, 24px, $text-black);
 
   @media (min-width: $tablet-width) {
@@ -92,9 +93,9 @@
 
 .functions__link-icon {
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 30px;
-  transform:  translateY(-50%);
+  transform: translateY(-50%);
   opacity: 0.2;
 }
 
@@ -105,5 +106,4 @@
   @media (min-width: $tablet-width) {
     padding-left: 52px;
   }
-
 }

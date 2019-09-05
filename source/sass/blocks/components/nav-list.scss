@@ -43,6 +43,7 @@
   display: block;
   padding: 26px 30px 27px;
   border: 1px solid #ececec;
+
   @include link ("Open Sans Bold", 17px, 24px, $text-black);
 
   @media (min-width: $tablet-width) {

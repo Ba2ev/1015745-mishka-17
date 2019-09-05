@@ -16,11 +16,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     width: 320px;
     height: 6px;
-    background-image: url(../img/bg-zigzag-line.svg);
+    background-image: url("../img/bg-zigzag-line.svg");
     background-size: 320px 6px;
     background-position: center top;
     background-repeat: no-repeat;
@@ -44,6 +44,7 @@
   margin: 0;
   margin-bottom: 30px;
   padding: 0 3px;
+
   @include text("Open Sans Bold", 25px, 30px, $text-black);
 
   @media (min-width: $tablet-width) {
@@ -54,7 +55,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 707px;
-    margin:0 auto 47px;
+    margin: 0 auto 47px;
     font-size: 53px;
     line-height: 57px;
   }

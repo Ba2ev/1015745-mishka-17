@@ -72,6 +72,7 @@
   max-width: 115px;
   padding-left: 3px;
   padding-bottom: 5px;
+
   @include text ("Open Sans Bold", 19px, 24px, #ffffff);
 
   @media (min-width: $tablet-width) {
