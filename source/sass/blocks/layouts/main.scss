@@ -11,10 +11,10 @@
 
 .main__intro {
   position: relative;
-  margin-bottom: -90px;
+  margin-bottom: -91px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -59px;
+    margin-top: -57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,7 +23,7 @@
 }
 
 .main__catalog {
-  margin-top: 15px;
+  margin-top: 16px;
 
   @media (min-width: $tablet-width) {
     margin-top: 65px;
@@ -45,7 +45,7 @@
 
 .main__about {
   position: relative;
-  margin-bottom: 57px;
+  margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 29px;
@@ -134,7 +134,7 @@
   margin: 30px auto 40px;
 
   @media (min-width: $tablet-width) {
-    margin: 47px auto 57px;
+    margin: 48px auto 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -152,7 +152,7 @@
 }
 
 .main__knitting {
-  margin-bottom: 55px;
+  margin-bottom: 56px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;

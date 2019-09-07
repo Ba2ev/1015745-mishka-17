@@ -29,16 +29,8 @@
           <img class="logo-link__image" src="img/logo-mobile.svg" alt="Логотип магазина 'Мишка'">
         </picture>
       </a>
-      <button class="btn-menu-close btn-menu-close--hidden header__btn-menu-close" type="button">
-        <svg class="btn-menu-close__icon" width="21" height="20">
-          <use xlink:href="#icon-menu-close"></use>
-        </svg>
-      </button>
-      <button class="btn-menu btn-menu--hidden header__btn-menu" type="button">
-        <svg class="btn-menu__icon" width="20" height="14">
-          <use xlink:href="#icon-menu-open"></use>
-        </svg>
-      </button>
+      <button class="btn-menu btn-menu--open btn-menu--hidden header__btn-menu"
+        type="button"></button>
       <nav class="nav header__nav">
         <ul class="nav-list nav__list">
           <li class="nav-list__item">
@@ -104,7 +96,8 @@
       <h2 class="knitting-order__title visually-hidden">Форма заявки для вязания на заказ</h2>
       <p class="knitting-order__description">Мы будем рады воплотить в жизнь ваши пожелания!
         Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="knitting-form knitting-order__form" action="https://echo.htmlacademy.ru" method="POST">
+      <form class="knitting-form knitting-order__form" action="https://echo.htmlacademy.ru"
+        method="POST">
         <div class="knitting-form__container">
           <fieldset class="knitting-form__group">
             <legend class="knitting-form__group-legend">Тип</legend>
@@ -187,9 +180,11 @@
             </legend>
             <div class="knitting-form__contact-line">
               <label class="knitting-form__contact-label" for="phone">тел</label>
-              <input class="knitting-form__contact" type="tel" name="Phone" id="phone"
-                placeholder="+7 ХХХ ХХХ ХХ ХХ*" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
-              <svg class="knitting-form__contact-icon knitting-form__contact-icon--phone" width="25" height="24">
+              <input class="knitting-form__contact knitting-form__contact--phone" type="tel"
+                name="Phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required
+                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+              <svg class="knitting-form__contact-icon knitting-form__contact-icon--phone" width="25"
+                height="24">
                 <use xlink:href="#icon-phone"></use>
               </svg>
             </div>
@@ -197,14 +192,15 @@
               <label class="knitting-form__contact-label" for="email">E-mail</label>
               <input class="knitting-form__contact" type="email" name="Email" id="email"
                 placeholder="Ваш Email*" required>
-              <svg class="knitting-form__contact-icon knitting-form__contact-icon--mail" width="32" height="21">
+              <svg class="knitting-form__contact-icon knitting-form__contact-icon--mail" width="32"
+                height="21">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </div>
           </fieldset>
         </div>
         <div class="knitting-form__container">
-          <fieldset class="knitting-form__group knitting-form__group--footer">
+          <div class="knitting-form__group knitting-form__group--footer">
             <div class="knitting-form__textarea-line">
               <label class="knitting-form__textarea-label" for="contact-text">Доп</label>
               <textarea class="knitting-form__textarea" id="contact-text"
@@ -212,7 +208,7 @@
             </div>
             <span class="knitting-form__required-message">*Поля обязательны для заполнения</span>
             <button class="knitting-form__submit" type="submit">Отправить заказ</button>
-          </fieldset>
+          </div>
         </div>
       </form>
     </section>
@@ -222,28 +218,36 @@
   <footer class="footer form__footer">
     <div class="footer__container">
       <a class="logo-link logo-link--footer footer__logo" href="index.html">
-        <svg class="logo-link__icon" width="102" height="34">
+        <svg class="logo-link__icon" width="102" height="34"
+          aria-labelledby="logo-link__icon-title">
+          <title id="logo-link__icon-title">Логотип магазина "Мишка"</title>
           <use xlink:href="#logo-footer"></use>
         </svg>
       </a>
       <ul class="social-list footer__socials">
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <svg class="social-list__link-icon" width="22" height="21">
+            <svg class="social-list__link-icon" width="22" height="21"
+              aria-labelledby="social-list__icon-title">
+              <title id="social-list__icon-title">Наша страница в Instagram</title>
               <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <svg class="social-list__link-icon" width="15" height="28">
+            <svg class="social-list__link-icon" width="15" height="28"
+              aria-labelledby="social-list__icon-title">
+              <title id="social-list__icon-title">Наша страница в Facebook</title>
               <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <svg class="social-list__link-icon" width="23" height="20">
+            <svg class="social-list__link-icon" width="23" height="20"
+              aria-labelledby="social-list__icon-title">
+              <title id="social-list__icon-title">Наша страница в Twitter</title>
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
@@ -252,7 +256,9 @@
       <a class="copyright-link footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"
         target="_blank">
         <span class="copyright-link__text">Разработано</span>
-        <svg class="copyright-link__icon" width="27" height="34">
+        <svg class="copyright-link__icon" width="27" height="34"
+          aria-labelledby="copyright-link__icon-title">
+          <title id="copyright-link__icon-title">Логотип HTML Academy</title>
           <use xlink:href="#logo-htmlacademy"></use>
         </svg>
       </a>

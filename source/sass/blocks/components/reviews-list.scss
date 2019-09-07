@@ -14,14 +14,23 @@
   text-overflow: ellipsis;
 
   @media (min-width: $tablet-width) {
+    height: 120px;
     max-width: 645px;
     margin-bottom: 58px;
     font-size: 17px;
-    height: 120px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 780px;
     margin-bottom: 8px;
+  }
+
+  br {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
   }
 }
 
@@ -39,21 +48,17 @@
     display: block;
     max-width: 400px;
     margin-bottom: 3px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
   }
 }
 
-.reviews-list__item-person-link {
+.reviews-list__item-person-adress {
   display: inline;
   font-size: 17px;
   color: $text-grey;
   text-decoration: none;
-  border-bottom: 1px solid #46c1ae;
-
-  &:hover {
-    color: #46c1ae;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }

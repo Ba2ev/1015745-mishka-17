@@ -9,6 +9,24 @@
   }
 }
 
+.btn-menu--open {
+  &::before {
+    content: url("../img/icon-menu-open.svg");
+    display: block;
+    width: 20px;
+    height: 14px;
+  }
+}
+
+.btn-menu--close {
+  &::before {
+    content: url("../img/icon-menu-close.svg");
+    display: block;
+    width: 21px;
+    height: 20px;
+  }
+}
+
 .btn-menu--hidden {
   display: none;
 }

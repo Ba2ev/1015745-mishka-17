@@ -1,6 +1,6 @@
 .week-product {
   @media (min-width: $desktop-width) {
-    padding: 55px 0 70px;
+    padding: 56px 0 70px;
   }
 
   &::before {
@@ -8,7 +8,7 @@
 
     @media (min-width: $tablet-width) {
       position: absolute;
-      top: -12px;
+      top: -57px;
       left: 0;
       width: 100%;
       height: 24px;
@@ -21,7 +21,7 @@
     @media (min-width: $desktop-width) {
       top: -17px;
       height: 34px;
-      background-size: auto 34px;
+      background-size: 1150px 34px;
     }
   }
 }
@@ -31,9 +31,9 @@
   margin: 27px auto 35px;
 
   @media (min-width: $tablet-width) {
-    max-width: 668px;
+    max-width: 674px;
     position: relative;
-    margin: 45px auto 50px;
+    margin: 45px auto 55px;
   }
 
   @media (min-width: $desktop-width) {

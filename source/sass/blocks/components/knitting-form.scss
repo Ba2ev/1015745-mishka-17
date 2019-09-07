@@ -55,7 +55,7 @@
 .knitting-form__group-legend {
   padding-right: 25px;
 
-  @include text("open Sans Bold", 17px, 17px, $deco-light);
+  @include text("open Sans Bold", 17px, 16px, $deco-light);
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -72,7 +72,8 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
+    width: 501px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,7 +83,7 @@
 }
 
 .knitting-form__wrap--type {
-  margin-top: 31px;
+  margin-top: 32px;
   margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
@@ -92,7 +93,7 @@
 }
 
 .knitting-form__wrap--check {
-  margin-top: 13px;
+  margin-top: 14px;
   margin-bottom: 21px;
   min-height: 202px;
   align-content: space-between;
@@ -105,11 +106,12 @@
   @media (min-width: $desktop-width) {
     min-height: 125px;
     width: 766px;
+    justify-content: flex-start;
   }
 }
 
 .knitting-form__wrap--fio {
-  margin-top: 4px;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -224,6 +226,16 @@
     margin: 0;
     height: 51px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 23px;
+  }
+
+  &:nth-child(3n) {
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
+  }
 }
 
 .knitting-form__check {
@@ -312,7 +324,11 @@
   }
 
   &:not(:first-child) {
-    margin-top: 25px;
+    margin-top: 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 24px;
+    }
   }
 }
 
@@ -331,19 +347,22 @@
 .knitting-form__text {
   box-sizing: border-box;
   width: 100%;
+  height: 52px;
   border: none;
   border-bottom: 2px solid black;
-  font-size: 19px;
-  line-height: 19px;
-  padding: 15px 0 14px;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 16px 0 16px;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding: 15px;
+    padding: 12px 15px;
+    font-size: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 18px;
+    padding: 12px 18px;
   }
 
   &::placeholder {
@@ -367,6 +386,11 @@
     position: relative;
     display: flex;
     align-items: center;
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
   }
 
   &:not(:last-child) {
@@ -385,7 +409,7 @@
   display: flex;
   align-items: center;
 
-  @include text("Open Sans Bold", 17px, 17px, $deco-light);
+  @include text("Open Sans Bold", 17px, 16px, $deco-light);
   text-transform: uppercase;
   cursor: pointer;
 
@@ -412,16 +436,22 @@
 .knitting-form__contact {
   box-sizing: border-box;
   width: 100%;
-  padding: 20px 35px 16px 0;
-  font-size: 19px;
-  line-height: 19px;
+  height: 52px;
+  padding: 18px 35px 20px 0;
+  font-size: 17px;
+  line-height: 18px;
   border: none;
   border-bottom: 2px solid black;
   background-color: transparent;
+  outline: none;
+  margin-left: auto;
+  margin-top: 6px;
 
   @media (min-width: $tablet-width) {
     width: 500px;
-    padding: 15px 60px 16px 15px;
+    margin-top: 0;
+    padding: 11px 60px 13px 15px;
+    font-size: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -438,6 +468,11 @@
     }
   }
 }
+
+.knitting-form__contact--phone {
+  font-size: 19px;
+}
+
 
 .knitting-form__contact-icon {
   position: absolute;
@@ -472,7 +507,7 @@
 
 .knitting-form__textarea-line {
   margin-top: 33px;
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -493,7 +528,7 @@
   align-items: center;
   font-family: "Open Sans Bold", "arial", sans-serif;
   font-size: 17px;
-  line-height: 17px;
+  line-height: 16px;
   color: #63d1bb;
   text-transform: uppercase;
   cursor: pointer;
@@ -526,12 +561,17 @@
   padding: 14px;
   border: 2px solid #444444;
   resize: none;
-  margin-top: 23px;
+  margin-top: 25px;
+  outline: none;
+
+  @include text("Open Sans", 17px, 18px, rgba(68, 68, 68, 0.3));
 
   @media (min-width: $tablet-width) {
     width: 500px;
     margin-top: 0;
     padding: 13px;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -557,16 +597,16 @@
   width: 260px;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    order: 1;
     width: 302px;
-    margin-left: auto;
     margin-bottom: 0;
+    margin-left: auto;
     align-self: center;
     font-size: 17px;
     line-height: 30px;
+    order: 1;
   }
 }
 
@@ -575,16 +615,18 @@
   display: block;
   align-self: center;
   min-width: 260px;
-  padding: 14px 0;
+  padding: 15px 0;
   background-color: transparent;
+  cursor: pointer;
 
-  @include link ("Open Sans Bold", 18px, 20px, $text-grey);
+  @include link ("Open Sans Bold", 17px, 16px, $text-grey);
   text-transform: uppercase;
   text-align: center;
   border: 2px solid #444444;
 
   @media (min-width: $tablet-width) {
-    min-width: 230px;
+    min-width: 228px;
+    padding: 16px 0;
   }
 
   &:hover {
@@ -594,5 +636,6 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+    background-color: $text-grey;
   }
 }

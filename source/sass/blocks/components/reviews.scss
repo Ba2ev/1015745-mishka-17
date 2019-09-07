@@ -38,6 +38,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
+    margin-left: -5px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -90,6 +91,7 @@
     top: 3px;
     right: 0;
     min-width: 175px;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,5 +105,6 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+    background-color: $text-grey;
   }
 }

@@ -50,7 +50,7 @@
 }
 
 .about-list__item:not(:last-child) {
-  margin-bottom: 29px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
@@ -75,7 +75,7 @@
   display: block;
   padding: 0 5px;
 
-  @include text ("Open Sans Bold", 17px, 19px, $text-black);
+  @include text ("Open Sans Bold", 17px, 20px, $text-black);
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

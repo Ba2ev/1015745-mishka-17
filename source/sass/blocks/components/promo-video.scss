@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 370px;
-    padding: 41px 57px 60px 78px;
+    padding: 44px 57px 60px 78px;
     height: 455px;
   }
 
@@ -30,11 +30,11 @@
   align-items: center;
   width: 100%;
   max-width: 340px;
-  margin: 22px 25px 24px;
+  margin: 22px 33px 24px;
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
-    margin: 0 26px 28px;
+    margin: 0 39px 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,27 +47,25 @@
 
 .promo-video__title-icon {
   fill: $deco-light;
-  margin-right: 23px;
-  margin-left: 10px;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    width: 42px;
-    height: 32px;
-    margin-right: 27px;
-    margin-left: 10px;
+    margin-right: 33px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    margin-left: -2px;
-    margin-bottom: 22px;
+    margin: 0 0 28px 2px;
   }
 }
 
 .promo-video__title-text {
+  max-width: 137px;
+
   @include text("Open Sans Bold", 17px, 24px, $text-black);
 
   @media (min-width: $tablet-width) {
+    max-width: 100%;
+    flex-grow: 1;
     font-size: 20px;
   }
 }
@@ -79,7 +77,7 @@
 
   @media (min-width: $tablet-width) {
     order: -1;
-    margin-bottom: 33px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,12 +116,15 @@
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
-    margin: 0 40px 37px;
+    margin: 0 40px 35px;
     font-size: 15px;
-    line-height: 29px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    height: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
     margin: 0;
     margin-bottom: 45px;
     line-height: 30px;
@@ -159,5 +160,6 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+    background-color: $text-grey;
   }
 }

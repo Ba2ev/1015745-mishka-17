@@ -34,6 +34,7 @@
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 49px;
+    margin-left: -5px;
     padding: 0;
   }
 
@@ -99,10 +100,31 @@
 .contacts__line-title {
   display: block;
   min-width: 46px;
-  margin-right: 30px;
+  margin-right: 32px;
 
   @media (min-width: $tablet-width) {
     margin-right: 23px;
+  }
+}
+
+.contacts__line-link {
+  display: block;
+  max-width: 185px;
+  text-decoration: none;
+  color: $text-grey;
+  border-bottom: 1px solid #46c1ae;
+
+  @media (min-width: $tablet-width) {
+    max-width: 225px;
+  }
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
+    border-bottom: 1px solid rgba(70, 193, 174, 0.1);
   }
 }
 

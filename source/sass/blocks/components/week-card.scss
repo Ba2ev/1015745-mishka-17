@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 875px;
+    max-width: 878px;
     margin-left: auto;
   }
 }
@@ -20,12 +20,12 @@
   margin: 0;
   margin-bottom: 47px;
 
-  @include text("Open Sans Bold", 23px, 30px, $text-black);
+  @include text("Open Sans Bold", 25px, 30px, $text-black);
 
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-bottom: 48px;
-    font-size: 40px;
+    font-size: 43px;
     line-height: 50px;
   }
 
@@ -48,7 +48,7 @@
     @media (min-width: $tablet-width) {
       top: 57%;
       left: auto;
-      right: 28px;
+      right: 26px;
       bottom: auto;
       transform: translateY(-50%);
       width: 70px;
@@ -58,7 +58,7 @@
 
     @media (min-width: $desktop-width) {
       right: auto;
-      left: -130px;
+      left: -126px;
     }
   }
 }
@@ -74,6 +74,7 @@
     margin-bottom: 36px;
     font-size: 17px;
     line-height: 30px;
+    margin-left: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,7 +84,7 @@
 
 .week-card__params {
   width: 260px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   border-collapse: collapse;
   font-size: 15px;
   line-height: 20px;
@@ -91,6 +92,7 @@
   @media (min-width: $tablet-width) {
     width: 292px;
     margin-bottom: 57px;
+    margin-left: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,10 +122,14 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 0;
+    right: 5px;
     bottom: 0;
     margin-bottom: 0;
     z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
   }
 }
 
@@ -137,7 +143,7 @@
   @media (min-width: $tablet-width) {
     width: 292px;
     margin-bottom: 34px;
-    font-size: 21px;
+    font-size: 20px;
   }
 }
 
@@ -164,5 +170,6 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+    background-color: $text-grey;
   }
 }

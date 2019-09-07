@@ -1,30 +1,24 @@
 /*-----Скрытие/раскрытие меню-----*/
 var popupMenu = function () {
-  var btnOpen = document.querySelector(".btn-menu");
-  var btnClose = document.querySelector(".btn-menu-close");
-
+  var btn = document.querySelector(".btn-menu");
   var headerNav = document.querySelector(".header__nav");
   var headerFunctions = document.querySelector(".header__functions");
 
-  btnOpen.classList.remove("btn-menu--hidden");
-  btnClose.classList.add("btn-menu-close--hidden");
+  btn.classList.remove("btn-menu--hidden");
   headerNav.classList.add("nav--hide");
   headerFunctions.classList.add("functions--hide");
 
-  btnOpen.addEventListener("click", function (evt) {
+  btn.addEventListener("click", function (evt) {
     evt.preventDefault();
-    btnOpen.classList.add("btn-menu--hidden");
-    btnClose.classList.remove("btn-menu-close--hidden");
-    headerNav.classList.remove("nav--hide");
-    headerFunctions.classList.remove("functions--hide");
-  })
-
-  btnClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    btnOpen.classList.remove("btn-menu--hidden");
-    btnClose.classList.add("btn-menu-close--hidden");
-    headerNav.classList.add("nav--hide");
-    headerFunctions.classList.add("functions--hide");
+    if(btn.classList.contains("btn-menu--open")) {
+      btn.classList.remove("btn-menu--open");
+      btn.classList.add("btn-menu--close");
+    } else {
+      btn.classList.add("btn-menu--open");
+      btn.classList.remove("btn-menu--close");
+    }
+    headerNav.classList.toggle("nav--hide");
+    headerFunctions.classList.toggle("functions--hide");
   })
 }
 /*-----Вызов скрытия/раскрытия меню----- */
